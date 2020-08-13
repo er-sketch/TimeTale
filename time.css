@@ -1,0 +1,48 @@
+body
+{
+ background:url(https://i.pinimg.com/564x/66/3e/e8/663ee8c0e9da77e5eca938a28e3fcaa0.jpg)}
+td
+{
+		border: 1px solid black;
+		line-height: 35px;
+		padding-left: 7px;
+		padding-right: 7px;
+		border-radius: 5px;
+
+}
+table{
+	margin: 60px auto;
+	text-align: center;
+	font-weight:bold;
+}
+h2
+{
+	color: blue;
+}
+.jash
+{
+	margin: 60px auto;
+}
+
+tr:nth-child(even)
+{
+background-color: #b6e6a8;
+opacity: 0.8;
+}
+tr:nth-child(odd)
+{
+background-color: #caedeb;
+opacity: 0.8;
+}
+
+
+tr:first-child
+{
+	background-color: #6db9e8;
+	color: white;
+}
+td:hover
+{
+	opacity: 1;
+	background-color: #f5cbf1;
+}
