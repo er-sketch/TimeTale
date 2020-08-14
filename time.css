@@ -1,7 +1,10 @@
 body
 {
-background-color:green;
- background:url(https://mcdn.wallpapersafari.com/medium/56/12/FmDrj8.jpg)}
+ background:url(https://mcdn.wallpapersafari.com/medium/56/12/FmDrj8.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
 td
 {
 		border: 1px solid black;
