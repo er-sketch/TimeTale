@@ -5,7 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="time.css">
 </head>
 <body>
- <table>
+	<h1>Time Table</h1>
+ <table id="game">
  	<tr>
  		<td>DAYS</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td>
  	</tr>
@@ -53,5 +54,54 @@
  		</tr>
  	</table>
  </div>
+ <script type="text/javascript">
+ 	var t=new Date();
+ 	var d=t.getDay();
+ 	var h=t.getHours()%12;
+ 	var m=t.getMinutes()
+ 	if(m<10)
+ 	{
+ 		m="0"+m.toString();
+ 	}
+ 	var ti=h.toString()+m;
+ 	var o=parseInt(ti);
+ 	console.log(o);
+    var s=[845,945,1045,1100,1200,100,200,300,315,415,515];
+    for(i=0;i<s.length;i++)
+    {
+    x=s[i]-o;
+    if(x<=100 & x>=0)
+    {
+    	var j=i;
+    	console.log(j);
+    	break;
+    }
+   }
+   var k;
+   if(j<3 & j>0)
+   {
+   	k=j;
+   }
+   else if(j<8 & j>3)
+   {
+   	k=j-1;
+   }
+   else if(j<=10 & j>8)
+   {
+   	k=j-2;
+   }
+
+ console.log(k);
+ 	if(d==0)
+ 	{
+ 	alert("Today is a Sunday:) ");	
+ 	}
+    else
+    {
+     document.getElementById("game").rows[d+1].cells.item(k).style.background="red";
+
+    }
+ </script>
+
 </body>
 </html>
